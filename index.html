@@ -42,9 +42,14 @@
 </div>
 
 <div id="win1" style="visibility: hidden;">
-<form>
+<form ng-controller="textCtrl">
+	<input type="button">
+
 	Coordinate1: <coord></coord><br/>
 	Coordinate2: <coord></coord>
+
+	<textarea>{{text}}</textarea>
+
 </form>
 </div>
 

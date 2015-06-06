@@ -1,7 +1,10 @@
 (function() {
 	var app = angular.module('myApp', ['ngPopup', 'coord']);
 
-	
+	app.controller("textCtrl", function($scope) {
+		$scope.text = 'win1';
+	});
+
 	app.controller("win1Ctrl", function($scope){
 		$scope.winId = 'win1';
 
