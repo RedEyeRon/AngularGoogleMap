@@ -3,6 +3,20 @@
 
 	app.controller("textCtrl", function($scope) {
 		$scope.text = 'win1';
+
+
+		//var div = $('#loadhtml');
+		//var url='http://planetredeye.com/index.html';
+		//var options = {
+		//	method:'get',
+		//	onSuccess: function(transport){
+		//		div.innerHTML=transport.responseText;
+		//	},
+		//	onFailure: function(transport){
+		//		alert('Failed '+transport.responseText);
+		//	}
+		//};//end options
+		//new Ajax.Request(url,options);
 	});
 
 	app.controller("win1Ctrl", function($scope){
