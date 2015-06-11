@@ -17,10 +17,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js" type="text/javascript"></script>
 
 
-	<!--<script type="text/javascript" src="scripts/ajax/ajax.js"></script>-->
-	<!--<script type="text/javascript" src="scripts/ajax/base.js"></script>-->
-	<!--<script type="text/javascript" src="scripts/ajax/request.js"></script>-->
-
 	<!-- ngPopup -->
 	<link rel="stylesheet" href="styles/ngPopupStyle.css">
 	<script type="text/javascript" src="scripts/ngPopup.js"></script>
@@ -28,6 +24,7 @@
 	<script src="CoordinateInput.js"></script>
 
 	<!-- My Scripts -->
+	<script src="SimplePlotting/SimplePlotting.js"></script>
 	<script src="app.js"></script>
 	<link rel="stylesheet" href="styles.css"/>
 
@@ -37,27 +34,17 @@
 
 <body>
 
-<div my-map=""></div>
+	<div my-map=""></div>
+
+	<div ng-controller="simplePlotting" ng-init="init('Simple1', 33.31, -112.0)">
+		<ng-pop-up option="config" winId="Simp1" style="z-index: 99;"></ng-pop-up>
+	</div>
+
+	<div ng-controller="simplePlotting" ng-init="init('Simple2', 33.33, -112.0)" >
+		<ng-pop-up option="config" windId="Simp2" style="z-index: 99;"></ng-pop-up>
+	</div>
 
 </body>
 
-
-<div ng-controller="win1Ctrl" >
-<ng-pop-up option="config" style="z-index: 99;"></ng-pop-up>
-</div>
-
-<div id="win1" style="visibility: hidden;">
-<form ng-controller="textCtrl">
-	<input type="button">
-
-	Coordinate1: <coord></coord><br/>
-	Coordinate2: <coord></coord>
-
-	<textarea>{{text}}</textarea>
-
-
-	<span id="loadhtml"></span>
-</form>
-</div>
 
 </html>
