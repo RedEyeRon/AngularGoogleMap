@@ -1,7 +1,14 @@
 (function () {
     var app = angular.module('myApp', ['ngPopup', 'coord', 'simplePlotting']);
 
-    app.directive('myMap', function () {
+    app.service('EcefService', function() {
+
+        this.method1 = function () {
+            alert("Yoda");
+        }
+    });
+
+    app.directive('myMap', function (EcefService) {
         // directive link function
         var link = function (scope, element, attrs) {
 
@@ -25,6 +32,8 @@
 
             // show the map and place some markers
             initMap();
+            EcefService.method1();
+
         };
 
         return {
