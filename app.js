@@ -1,12 +1,12 @@
 (function () {
-    var app = angular.module('myApp', ['ngPopup', 'coord', 'simplePlotting']);
+    var app = angular.module('myApp', ['ngPopup', 'coord', 'simplePlotting', 'ecefService']);
 
-    app.service('EcefService', function() {
-
-        this.method1 = function () {
-            alert("Yoda");
-        }
-    });
+    //app.service('EcefService', function() {
+    //
+    //    this.method1 = function () {
+    //        alert("Yoda");
+    //    }
+    //});
 
     app.directive('myMap', function (EcefService) {
         // directive link function
