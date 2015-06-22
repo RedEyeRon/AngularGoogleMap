@@ -1,4 +1,3 @@
-var precision = 10;
 var outputDelimiter = ',';
 
 var CoordTools = {
@@ -68,9 +67,9 @@ var CoordTools = {
 				if (fieldArr.length == 3 && CoordTools.isLatLonAltDegreeMeterArr(fieldArr))
 				{
 					var ecefVec = llhxyz([parseFloat(fieldArr[0]), parseFloat(fieldArr[1]), parseFloat(fieldArr[2])]);
-					var x = (parseFloat(ecefVec[0])).toPrecision(precision)
-					var y = (parseFloat(ecefVec[1])).toPrecision(precision)
-					var z = (parseFloat(ecefVec[2])).toPrecision(precision)
+					var x = (parseFloat(ecefVec[0]))
+					var y = (parseFloat(ecefVec[1]))
+					var z = (parseFloat(ecefVec[2]))
 					newText = newText + x + outputDelimiter + y + outputDelimiter + z + "\n";
 					handled = true;
 				}
@@ -109,9 +108,9 @@ var CoordTools = {
 					ecefVec[2] = parseFloat(fieldArr[2]);
 
 					var llhVec = xyzllh(ecefVec);
-					lat=parseFloat(llhVec[0]).toPrecision(precision);
-					lon=parseFloat(llhVec[1]).toPrecision(precision);
-					alt=parseFloat(llhVec[2]).toPrecision(precision);
+					lat=parseFloat(llhVec[0]);
+					lon=parseFloat(llhVec[1]);
+					alt=parseFloat(llhVec[2]);
 					newText = newText + lat + outputDelimiter + lon + outputDelimiter + alt + "\n";
 					handled = true;
 				}

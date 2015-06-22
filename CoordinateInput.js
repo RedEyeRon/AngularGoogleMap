@@ -6,7 +6,7 @@
             restrict: 'E',
 
             template: '{{label}}' +
-            '<input type="text" ng-model="coord">' +
+            '<input type="text" ng-model="coord" size="35">' +
             '<img ng-src="{{statusIcon()}}" class="img-thumbnail" ng-click="convert();"/>',
 
             controller: function ($scope) {
