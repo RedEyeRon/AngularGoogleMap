@@ -4,6 +4,6 @@
     service.service('EcefService', function () {
 
         this.method1 = function () {
-            alert("Yoda");
+            //alert("Yoda");
         }
     });

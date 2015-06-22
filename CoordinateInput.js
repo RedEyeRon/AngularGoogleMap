@@ -12,12 +12,15 @@
             controller: function ($scope) {
                 $scope.coord = "";
                 $scope.convert = function () {
-                    $scope.coord = $scope.coord === "E" ? 'L' : 'E';
+                    if (CoordTools.isEcefArr($scope.coord.trim().split(",")))
+                        $scope.coord = CoordTools.convertTextEcefToLlh($scope.coord);
+                    else if (CoordTools.isLatLonAltDegreeMeterArr($scope.coord.trim().split(',')))
+                        $scope.coord = CoordTools.convertTextLlhToEcef($scope.coord);
                 };
                 $scope.statusIcon = function () {
-                    if ($scope.coord === "E")
+                    if (CoordTools.isEcefArr($scope.coord.trim().split(",")))
                         return "img/Letter-E-lg-icon.png"
-                    else if ($scope.coord === "L")
+                    else if (CoordTools.isLatLonAltDegreeMeterArr($scope.coord.trim().split(',')))
                         return "img/Letter-L-lg-icon.png"
                     else
                         return "img/sign-warning-icon.png"
