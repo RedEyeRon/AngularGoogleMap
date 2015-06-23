@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=weather,visualization,panoramio"></script>
+
+	<!-- Angular -->
+	<script src="bower_components/angular/angular.js"></script>
+
+	<!-- ngPopup -->
+	<link rel="stylesheet" href="bower_components/ng-popup/dist/ngPopupStyle.css">
+	<script src="bower_components/ng-popup/dist/ngPopup.js"></script>
+
+	<script src="bower_components/zeroclipboard/dist/ZeroClipboard.min.js"></script>
+	<script src="bower_components/ng-clip/dest/ng-clip.min.js"></script>
+
+
+	<!-- My Scripts -->
+	<script src="components/CoordTools/EcefFactory.js"></script>
+	<script src="components/CoordinateInput/CoordinateInput.js"></script>
+	<script src="components/SimplePlotting/SimplePlotting.js"></script>
+	<script src="components/CoordTools/geodesy.js"></script>
+	<script src="components/CoordTools/CoordTools.js"></script>
+
+	<script src="app.js"></script>
+
+	<link rel="stylesheet" href="app.css"/>
+
+    <title>Map</title>
+
+</head>
+
+<body>
+
+<p>
+	<textarea class="js-copytextarea">Hello I'm some text</textarea>
+</p>
+
+<p>
+	<button class="js-textareacopybtn">Copy Textarea</button>
+</p>
+
+	<div my-map=""></div>
+
+	<div ng-controller="simplePlotting" ng-init="init('Simple1', 33.31, -112.0)">
+		<ng-pop-up option="config" winId="Simp1" style="z-index: 99;"></ng-pop-up>
+	</div>
+
+	<div ng-controller="simplePlotting" ng-init="init('Simple2', 33.33, -112.0)" >
+		<ng-pop-up option="config" windId="Simp2" style="z-index: 99;"></ng-pop-up>
+	</div>
+
+</body>
+
+
+</html>
