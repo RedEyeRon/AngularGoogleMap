@@ -14,6 +14,10 @@
 	<link rel="stylesheet" href="styles/ngPopupStyle.css">
 	<script type="text/javascript" src="scripts/ngPopup.js"></script>
 
+	<script type="text/javascript" src="scripts/ZeroClipboard.min.js"></script>
+	<script type="text/javascript" src="scripts/ngClip.js"></script>
+
+
 	<!-- My Scripts -->
 	<script src="EcefFactory.js"></script>
 	<script src="CoordinateInput.js"></script>
@@ -30,6 +34,14 @@
 </head>
 
 <body>
+
+<p>
+	<textarea class="js-copytextarea">Hello I'm some text</textarea>
+</p>
+
+<p>
+	<button class="js-textareacopybtn">Copy Textarea</button>
+</p>
 
 	<div my-map=""></div>
 

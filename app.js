@@ -33,6 +33,7 @@
             // show the map and place some markers
             initMap();
             EcefService.method1();
+            //window.prompt("Copy to clipboard: Ctrl+C, Enter", "Yoda");
 
         };
 

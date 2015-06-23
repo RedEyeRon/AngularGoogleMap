@@ -1,5 +1,3 @@
-var outputDelimiter = ',';
-
 var CoordTools = {
 	isLatLonAltDegreeMeter : function (latDeg, lonDeg, altM) {
 		latDeg = parseFloat(latDeg);
@@ -45,7 +43,7 @@ var CoordTools = {
 			   );
 	},
 
-	convertTextLlhToEcef: function (inputText, defaultAlt) {
+	convertTextLlhToEcef: function (inputText, outputDelimiter, defaultAlt) {
 		var delimeterIndex;
 		var delimeters = [",", "\t", " "];
 		var newText = '';
@@ -82,7 +80,7 @@ var CoordTools = {
 		return newText;
 	},
 
-	convertTextEcefToLlh: function (inputText) {
+	convertTextEcefToLlh: function (inputText, outputDelimiter) {
 		var delimeterIndex;
 		var delimeters = [",", "\t", " "];
 		var newText = '';
