@@ -2,69 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="802235b4-69b5-4071-8aad-8ad11cdb5a8a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/CoordinateInput/img/Letter-E-lg-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/CoordinateInput/img/Letter-L-lg-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/CoordinateInput/img/Mini Blue Dot - Copy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/CoordinateInput/img/Mini Blue Dot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/CoordinateInput/img/Mini Gold Dot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/CoordinateInput/img/Mini Green Dot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/CoordinateInput/img/Mini Red Dot Cross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/CoordinateInput/img/Mini Red Dot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/CoordinateInput/img/Mini Yellow Dot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/CoordinateInput/img/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/CoordinateInput/img/Windows-Close-Program-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/zeroclipboard/dist/ZeroClipboard.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/angular/angular.min.js.gzip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/CoordinateInput/img/sign-warning-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/angular/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-clip/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-popup/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/zeroclipboard/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-clip/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-clip/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/zeroclipboard/dist/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/CoordTools/CoordTools.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/CoordinateInput/CoordinateInput.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/CoordTools/EcefFactory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-clip/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-popup/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-clip/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-popup/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/angular/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-clip/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/SimplePlotting/SimplePlotting.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/SimplePlotting/SimplePlotting.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/zeroclipboard/dist/ZeroClipboard.Core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/zeroclipboard/dist/ZeroClipboard.Core.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/zeroclipboard/dist/ZeroClipboard.Core.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/zeroclipboard/dist/ZeroClipboard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/zeroclipboard/dist/ZeroClipboard.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/zeroclipboard/dist/ZeroClipboard.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/angular/angular-csp.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/angular/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/angular/angular.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/angular/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-clip/example/bootstrap-tooltip.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/angular/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-clip/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-popup/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/zeroclipboard/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/CoordTools/geodesy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-clip/example/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/angular/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-clip/dest/ng-clip.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-clip/example/ng-repeat.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-clip/src/ngClip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-popup/dist/ngPopup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-popup/dist/ngPopup.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-popup/css/ngPopupStyle.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-popup/dist/ngPopupStyle.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-clip/npm-debug.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/angular/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/ng-clip/package.json" />
+      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\styles\ngPopupStyle.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AngularGoogleMap.iws" />
@@ -394,20 +332,12 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/styles/ngPopupStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
           <folding>
-            <marker date="1435071174690" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435071317908" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -416,14 +346,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/ngPopupStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="136" column="17" selection-start-line="136" selection-start-column="17" selection-end-line="136" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
