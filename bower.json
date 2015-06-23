@@ -1,0 +1,24 @@
+{
+  "name": "AngularGoogleMap",
+  "version": "0.0.0",
+  "homepage": "https://github.com/RedEyeRon/AngularGoogleMap",
+  "authors": [
+    "RedEyeRon <BizGitHub@planetredeye.com>"
+  ],
+  "description": "Angular Google Map ECEF tool Project",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.1",
+    "ng-popup": "~0.3.0",
+    "zeroclipboard": "~2.2.0",
+    "ng-clip": "~0.2.6"
+  }
+}
