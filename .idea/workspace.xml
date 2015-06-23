@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="802235b4-69b5-4071-8aad-8ad11cdb5a8a" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\CoordTools.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\CoordinateInput.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\EcefFactory.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\GoogelEarthCompiled.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\SimplePlotting\SimplePlotting.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\SimplePlotting\SimplePlotting.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\app.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\geodesy.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\img\Letter-E-lg-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\img\Letter-L-lg-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\img\Mini Blue Dot - Copy.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\img\Mini Blue Dot.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\img\Mini Gold Dot.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\img\Mini Green Dot.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\img\Mini Red Dot Cross.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\img\Mini Red Dot.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\img\Mini Yellow Dot.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\img\Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\img\Windows-Close-Program-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\img\sign-warning-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\scripts\ngPopup.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\scripts\ngPopup.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\scripts\ngPopupStyle.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\LearnAngular\AngularGoogleMap\styles.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="802235b4-69b5-4071-8aad-8ad11cdb5a8a" name="Default" comment="" />
     <ignored path="AngularGoogleMap.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,21 +21,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.269231">
-              <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.04233871">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimplePlotting.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SimplePlotting.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/SimplePlotting/SimplePlotting.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29310346">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -97,8 +70,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/CoordinateInput.js" />
         <option value="$PROJECT_DIR$/CoordinateInput.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/components/SimplePlotting/SimplePlotting.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
       </list>
     </option>
   </component>
@@ -170,28 +143,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularGoogleMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularGoogleMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimplePlotting" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -313,9 +264,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="0" width="1816" height="974" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18104906" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18104906" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -370,7 +321,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
           <folding>
-            <marker date="1435070055364" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435070378664" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -398,18 +349,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/app/components/SimplePlotting/SimplePlotting.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.269231">
-          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/SimplePlotting/SimplePlotting.js">
+    <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29310346">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.04233871">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding />
         </state>
       </provider>
