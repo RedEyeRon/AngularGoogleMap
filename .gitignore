@@ -1,7 +1,6 @@
 logs/*
 !.gitkeep
 node_modules/
-bower_components_HOLD/
 tmp
 .DS_Store
-.idea_HOLD
+.idea
