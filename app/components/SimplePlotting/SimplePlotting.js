@@ -12,15 +12,15 @@
             pinned:true,
             resizable:true,
             draggable:true,
-            position: {top: screen.height/2, left : 10},
+            position: {top: screen.height/3, left : 10},
             title:"Title1",
             hasTitleBar: true,
             isShow: true
-        }
+        };
 
         var infoWindow;
         var markers = [];
-        var iggy
+        var iggy;
 
         $scope.init = function($winId, $lat, $lon)
         {
@@ -31,7 +31,7 @@
 
         // place a marker
         function setMarker(position, title, content) {
-            var map = $scope.mainMap
+            var map = $scope.mainMap;
             var marker;
             var markerOptions = {
                 position: position,
