@@ -1,5 +1,5 @@
 (function () {
-    var app = angular.module('myApp', ['ngPopup', 'coord', 'simplePlotting', 'ecefService', 'output']);
+    var app = angular.module('myApp', ['ngPopup', 'coord', 'simplePlotting', 'ecefService', 'output', 'plottingJS']);
 
     //app.service('EcefService', function() {
     //
