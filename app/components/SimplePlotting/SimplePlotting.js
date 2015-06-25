@@ -5,11 +5,11 @@
 
         $scope.eventArray = [];
         $scope.config = {
-            modelName:"Model1",
+            modelName:"simplePlottingModel",
             width: 435,
             height:200,
             templateUrl:"components/SimplePlotting/SimplePlotting.html",
-            pinned:true,
+            pinned:false,
             resizable:true,
             draggable:true,
             position: {top: screen.height/3, left : 10},

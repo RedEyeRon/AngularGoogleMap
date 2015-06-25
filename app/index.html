@@ -15,13 +15,14 @@
     <script src="bower_components/ng-clip/dest/ng-clip.min.js"></script>
 
     <script src="bower_components/ace-builds/src-noconflict/ace.js"></script>
-
+    <script src="bower_components/angular-ui-ace/ui-ace.js"></script>
 
     <!-- My Scripts -->
     <script src="components/CoordTools/EcefFactory.js"></script>
     <script src="components/CoordinateInput/CoordinateInput.js"></script>
     <script src="components/SimplePlotting/SimplePlotting.js"></script>
     <script src="components/PlottingJS/PlottingJS.js"></script>
+    <script src="components/PlottingScript/PlottingScript.js"></script>
     <script src="components/CoordTools/geodesy.js"></script>
     <script src="components/CoordTools/CoordTools.js"></script>
     <script src="components/Output/Output.js"></script>
@@ -46,17 +47,18 @@
 
 <div my-map=""></div>
 
-<div ng-controller="outputCtrl" ng-init="init('outputId')">
-    <ng-pop-up option="config" outputId="outputId" style="z-index: 99;"></ng-pop-up>
+<div ng-controller="plottingScript" ng-init="init('plottingScriptId')"  style="z-index: 99;">
+    <ng-pop-up option="config"></ng-pop-up>
 </div>
 
-<div ng-controller="simplePlotting" ng-init="init('Simple1', 33.31, -112.0)">
-    <ng-pop-up option="config" winId="Simp1" style="z-index: 99;"></ng-pop-up>
+<div ng-controller="outputCtrl" ng-init="init('outputId')"  style="z-index: 99;">
+    <ng-pop-up option="config"></ng-pop-up>
 </div>
 
-<div ng-controller="plottingJS" ng-init="init('PlottingJS1', 33.33, -112.0)">
-    <ng-pop-up option="config" windId="PlottingJS1" style="z-index: 99;"></ng-pop-up>
+<div ng-controller="simplePlotting" ng-init="init('Simple1', 33.31, -112.0)" style="z-index: 99;">
+    <ng-pop-up option="config"></ng-pop-up>
 </div>
+
 
 
 <script>

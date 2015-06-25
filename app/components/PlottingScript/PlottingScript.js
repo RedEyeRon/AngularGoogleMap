@@ -1,10 +1,10 @@
 (function () {
-    var app = angular.module('plottingJS', ['ngPopup']);
+    var app = angular.module('plottingScript', ['ngPopup', 'ui.ace']);
 
-    app.controller("plottingJS", function ($scope, $timeout) {
+    app.controller("plottingScript", function ($scope, $timeout) {
 
 
-        $scope.editorJS = "" +
+        $scope.editorScript = "" +
             "\n" +
             "var lat = 33.30, lon = -112.0, alt = 1100;\n" +
             "\n" +
@@ -18,15 +18,15 @@
 
         $scope.eventArray = [];
         $scope.config = {
-            modelName: "plottingJSModel",
+            modelName: "ScriptPlottingModel",
             width: 435,
             height: 200,
-            templateUrl: "components/PlottingJs/PlottingJs.html",
+            templateUrl: "components/PlottingScript/PlottingScript.html",
             pinned: false,
             resizable: true,
             draggable: true,
-            position: {top: screen.height / 3, left: 10},
-            title: "Java Script Plotting",
+            position: {top: screen.height /3 - 210, left: 10},
+            title: "Script Plotting",
             hasTitleBar: true,
             isShow: true
         };
@@ -34,6 +34,13 @@
         var infoWindow;
         var markers = [];
         var iggy;
+
+        $scope.aceLoaded = function(_editor) {
+            _editor.setReadOnly(false);
+        };
+
+        $scope.aceChanged = function(e) {
+        };
 
         $scope.init = function ($winId) {
             $scope.winId = $winId;
@@ -91,7 +98,7 @@
         $scope.runIt = function () {
             var out;
             try {
-                out = eval($scope.editorJS);
+                out = eval($scope.editorScript);
             }
             catch (err) {
                 out = err;

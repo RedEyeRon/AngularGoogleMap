@@ -1,0 +1,30 @@
+<style>
+    .ace_editor {
+        height: 80%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+</style>
+
+
+<div id="{{windId}}" style="visibility: visible;">
+
+    <button ng-click="runIt()">Run</button>
+    <button ng-click="clearMarkers()">Clear Markers</button>
+
+</div>
+
+
+<div ng-model="editorScript" ui-ace="{
+      useWrapMode : true,
+      showGutter: true,
+      theme:'clouds',
+      mode: 'javascript',
+      firstLineNumber: 1,
+      useWrapMode: false,
+      onLoad: aceLoaded,
+      onChange: aceChanged
+    }">
+
+</div>
