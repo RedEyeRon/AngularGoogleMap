@@ -1,20 +1,27 @@
 (function () {
-    var app = angular.module('plottingScript', ['ngPopup', 'ui.ace']);
+    var app = angular.module('plottingScript', ['ngPopup', 'ui.ace', 'mapToolsSrv']);
 
-    app.controller("plottingScript", function ($scope, $timeout) {
+    app.controller("plottingScript", function ($scope, MapToolsSrv) {
+
 
 
         $scope.editorScript = "" +
             "\n" +
             "var lat = 33.30, lon = -112.0, alt = 1100;\n" +
             "\n" +
-            "for (var i = 0; i < 10; i++) {\n" +
+            "for (var i = 1; i <= 10; i++) {\n" +
             "    print(lat.toPrecision(9) + ',' + lon.toPrecision(9) + ',' + alt.toPrecision(5));\n" +
-            "    setMarker(lat, lon, alt, 'Point ' + i);\n" +
+            "    setMarker(lat, lon, alt, 'Point ' + i, 'Point ' + i + ' details!');\n" +
             "    lat += 0.01;\n" +
             "    lon += 0.01;\n" +
             "}\n" +
             "";
+
+        //try {
+        //    $scope.editorScript = angular.fromJson(sessionStorage.userService);
+        //} catch(e) {
+        //}
+
 
         $scope.eventArray = [];
         $scope.config = {
@@ -31,15 +38,14 @@
             isShow: true
         };
 
-        var infoWindow;
         var markers = [];
-        var iggy;
 
         $scope.aceLoaded = function(_editor) {
-            _editor.setReadOnly(false);
+            _editor.$blockScrolling = Infinity
         };
 
         $scope.aceChanged = function(e) {
+           sessionStorage.userService = angular.toJson($scope.editorScript);
         };
 
         $scope.init = function ($winId) {
@@ -49,46 +55,12 @@
 
         // place a marker
         function setMarker(lat, lon, alt, title, content) {
-            var map = $scope.mainMap;
-            var marker;
-            var markerOptions = {
-                position: new google.maps.LatLng(lat, lon),
-                map: map,
-                title: title,
-                icon: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png'
-            };
-
-            marker = new google.maps.Marker(markerOptions);
-            markers.push(marker); // add marker to array
-
-            google.maps.event.addListener(marker, 'click', function () {
-                // close window if not undefined
-                if (infoWindow !== void 0) {
-                    infoWindow.close();
-                }
-                // create new window
-                var infoWindowOptions = {
-                    content: content
-                };
-                infoWindow = new google.maps.InfoWindow(infoWindowOptions);
-                infoWindow.open(map, marker);
-            });
+            MapToolsSrv.setMarker($scope.mainMap, markers, lat, lon, alt, title, content);
         }
 
         $scope.clearMarkers = function clearMarkers() {
-            var markerCount = markers.length;
-            for (var i = 0; i < markerCount; i++)
-                markers[i].setMap(null);
-
-            bounds = new google.maps.LatLngBounds();
+            MapToolsSrv.clearMarkers($scope.mainMap, markers);
         };
-
-        $timeout(function (value) {//I change here
-            var editor = ace.edit("editor");
-            editor.setTheme("ace/theme/clouds");
-            editor.getSession().setMode("ace/mode/javascript");
-
-        }, 0);
 
         function print(str) {
             var elem = document.getElementById('outputId');

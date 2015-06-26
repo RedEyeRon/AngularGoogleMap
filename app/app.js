@@ -1,14 +1,7 @@
 (function () {
-    var app = angular.module('myApp', ['ngPopup', 'coord', 'simplePlotting', 'ecefService', 'output', 'plottingJS', 'plottingScript']);
+    var app = angular.module('myApp', ['ngPopup', 'coord', 'simplePlotting', 'output', 'plottingScript', 'mapToolsSrv']);
 
-    //app.service('EcefService', function() {
-    //
-    //    this.method1 = function () {
-    //        alert("Yoda");
-    //    }
-    //});
-
-    app.directive('myMap', function (EcefService) {
+    app.directive('myMap', function (MapToolsSrv) {
         // directive link function
         var link = function (scope, element, attrs) {
 
@@ -32,7 +25,7 @@
 
             // show the map and place some markers
             initMap();
-            EcefService.method1();
+            //MapToolsSrv.method1();
             //window.prompt("Copy to clipboard: Ctrl+C, Enter", "Yoda");
 
         };

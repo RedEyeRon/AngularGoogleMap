@@ -1,7 +1,7 @@
 (function() {
-    var app = angular.module('simplePlotting', ['ngPopup']);
+    var app = angular.module('simplePlotting', ['ngPopup', 'mapToolsSrv']);
 
-    app.controller("simplePlotting", function($scope){
+    app.controller("simplePlotting", function($scope, MapToolsSrv){
 
         $scope.eventArray = [];
         $scope.config = {
@@ -18,55 +18,23 @@
             isShow: true
         };
 
-        var infoWindow;
         var markers = [];
-        var iggy;
+        var iggyLat, iggyLon;
 
         $scope.init = function($winId, $lat, $lon)
         {
             $scope.winId = $winId;
             $scope.config.title = $winId;
-            iggy = new google.maps.LatLng($lat, $lon)
+            iggyLat = $lat;
+            iggyLon = $lon;
         };
 
-        // place a marker
-        function setMarker(position, title, content) {
-            var map = $scope.mainMap;
-            var marker;
-            var markerOptions = {
-                position: position,
-                map: map,
-                title: title,
-                icon: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png'
-            };
-
-            marker = new google.maps.Marker(markerOptions);
-            markers.push(marker); // add marker to array
-
-            google.maps.event.addListener(marker, 'click', function () {
-                // close window if not undefined
-                if (infoWindow !== void 0) {
-                    infoWindow.close();
-                }
-                // create new window
-                var infoWindowOptions = {
-                    content: content
-                };
-                infoWindow = new google.maps.InfoWindow(infoWindowOptions);
-                infoWindow.open(map, marker);
-            });
-        }
-
-        $scope.clearMarkers = function clearMarkers() {
-            var markerCount=markers.length;
-            for(var i=0;i<markerCount;i++)
-                markers[i].setMap(null);
-
-            bounds=new google.maps.LatLngBounds();
+        $scope.clearMarkers = function() {
+            MapToolsSrv.clearMarkers($scope.mainMap, markers);
         };
 
         $scope.findIggy = function() {
-            setMarker(iggy, 'IGGY!', 'Just some content');
+            MapToolsSrv.setMarker($scope.mainMap, markers, iggyLat, iggyLon, 'IGGY!', 'Just some content');
         };
     });
 
