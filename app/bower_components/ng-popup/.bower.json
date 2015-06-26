@@ -1,0 +1,50 @@
+{
+  "name": "ngPopup",
+  "description": "A modeless dialog for AngularJS",
+  "version": "0.3.0",
+  "homepage": "https://github.com/MarkoCen/ngPopup",
+  "main": "dist/ngPopup.js",
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "directive",
+    "e2e-tests",
+    "lib",
+    "model",
+    "views",
+    ".bowerrc",
+    ".gitattributes",
+    ".gitignore",
+    ".jshintignore",
+    ".jshintrc",
+    ".travis.yml",
+    "app.js",
+    "karma.conf.js",
+    "bower.json",
+    "gruntfile.js",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "angular": ">=1.2.x"
+  },
+  "keywords": [
+    "dialog",
+    "angularjs",
+    "modeless",
+    "popup",
+    "ng"
+  ],
+  "authors": [
+    "Marko Cen"
+  ],
+  "_release": "0.3.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.3.0",
+    "commit": "b105e8a288856cf992a7703ad531789ff3a3b828"
+  },
+  "_source": "git://github.com/MarkoCen/ngPopup.git",
+  "_target": "~0.3.0",
+  "_originalSource": "ng-popup"
+}
