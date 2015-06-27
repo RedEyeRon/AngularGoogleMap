@@ -26,8 +26,8 @@
         $scope.eventArray = [];
         $scope.config = {
             modelName: "ScriptPlottingModel",
-            width: 435,
-            height: 200,
+            width: 535,
+            height: 400,
             templateUrl: "components/PlottingScript/PlottingScript.html",
             pinned: false,
             resizable: true,

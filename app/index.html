@@ -18,12 +18,13 @@
     <script src="bower_components/angular-ui-ace/ui-ace.js"></script>
 
     <!-- My Scripts -->
-    <script src="components/MapTools/MapToolsSrv.js"></script>
+    <script src="components/CoordTools/CoordTypes.js"></script>
     <script src="components/CoordinateInput/CoordinateInput.js"></script>
     <script src="components/SimplePlotting/SimplePlotting.js"></script>
     <script src="components/PlottingScript/PlottingScript.js"></script>
     <script src="components/CoordTools/geodesy.js"></script>
     <script src="components/CoordTools/CoordTools.js"></script>
+    <script src="components/MapTools/MapToolsSrv.js"></script>
     <script src="components/Output/Output.js"></script>
 
     <script src="app.js"></script>
@@ -45,10 +46,6 @@
 </p>
 
 <div my-map=""></div>
-
-<div ng-controller="simplePlotting" ng-init="init('Simple1', 33.31, -112.0)">
-    <ng-pop-up option="config"  style="z-index: 99;"></ng-pop-up>
-</div>
 
 <div ng-controller="plottingScript" ng-init="init('plottingScriptId')">
     <ng-pop-up option="config" style="z-index: 99;"></ng-pop-up>
