@@ -7,13 +7,14 @@
 
         $scope.editorScript = "" +
             "\n" +
-            "var lat = 33.30, lon = -112.0, alt = 1100;\n" +
+            "var v1 = new Vehicle(33.30, -112.0, 1100);\n" +
+            "v1.setEcefVelocity(1609.34,1609.34,1609.34);\n" +
             "\n" +
             "for (var i = 1; i <= 10; i++) {\n" +
-            "    print(lat.toPrecision(9) + ',' + lon.toPrecision(9) + ',' + alt.toPrecision(5));\n" +
-            "    setMarker(lat, lon, alt, 'Point ' + i, 'Point ' + i + ' details!');\n" +
-            "    lat += 0.01;\n" +
-            "    lon += 0.01;\n" +
+            "    var llh = v1.getLlh();\n" +
+            "    print(llh[0].toPrecision(9) + ',' + llh[1].toPrecision(9) + ',' + llh[2].toPrecision(5));\n" +
+            "    setMarker(llh[0], llh[1], llh[2], 'Point ' + i, 'Point ' + i + ' details!');\n" +
+            "    v1.go(1);\n" +
             "}\n" +
             "";
 
